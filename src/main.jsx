@@ -48,12 +48,15 @@ const router = createBrowserRouter([
         path:"/reg",
         element:<Register></Register>
       },
-      {
-        path:"/dashboard",
-        element:<Dashboard></Dashboard>
-      }
+     
     ]
   },
+  {
+    path:"dashboard",
+    element:<Dashboard></Dashboard>,
+    children:[
+
+    ] }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
